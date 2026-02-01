@@ -49,7 +49,7 @@ class SalonController extends Controller
 
         Salon::create($data);
 
-        return redirect()->route('salons.index')->with('success', 'تم إنشاء الصالون بنجاح.');
+        return redirect()->route('salons.index')->with('success', "Salon created successfully.");
     }
 
     public function update(Request $request, Salon $salon)
@@ -78,13 +78,13 @@ class SalonController extends Controller
 
         $salon->update($data);
 
-        return redirect()->route('salons.index')->with('success', 'تم تعديل الصالون بنجاح.');
+        return redirect()->route('salons.index')->with('success', "Salon updated successfully.");
     }
 
     public function destroy(Salon $salon)
     {
         $salon->delete();
-        return redirect()->route('salons.index')->with('success', 'تم حذف الصالون بنجاح.');
+        return redirect()->route('salons.index')->with('success', "Salon deleted successfully.");
     }
 
     public function edit(Salon $salon)

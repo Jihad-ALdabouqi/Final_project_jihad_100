@@ -75,13 +75,13 @@ class SalonController extends Controller
     $data = $request->only(['name', 'location', 'phone', 'email', 'description']);
 
     if ($request->hasFile('image')) {
-        // حذف الصورة القديمة أولاً (اختياري لكن موصى به)
+       
         if ($salon->image_path && $salon->image_path !== 'img/default-salon.jpg') {
             \Storage::disk('public')->delete(str_replace('storage/', '', $salon->image_path));
         }
 
         $path = $request->file('image')->store('salons', 'public');
-        $data['image_path'] = 'storage/' . $path; // ✅ تغيير من 'image' إلى 'image_path'
+        $data['image_path'] = 'storage/' . $path; 
     }
 
     $salon->update($data);

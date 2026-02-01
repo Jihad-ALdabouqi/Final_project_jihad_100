@@ -547,3 +547,49 @@ html {
 *:focus {
     outline: none !important;
 }
+
+
+/********** Bickham Script for Headings Only **********/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bickham Script', 'Playfair Display', cursive;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+/* لضمان تطبيق الخط على العناوين في الهيرو سيكشن */
+.hero-header .hero-text h1,
+.hero-header .hero-text h2 {
+  font-family: 'Bickham Script', cursive;
+  font-weight: 400;
+}
+
+/* لعناوين المدونة والخدمات */
+.service h3,
+.blog h2,
+.team h2 {
+  font-family: 'Bickham Script', cursive;
+}
+
+/* أضف هذا الكود في نهاية ملف CSS الخاص بك */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* تطبيق خط Bickham Script (مع بديل مجاني) على العناوين فقط */
+.font-playfair-display {
+  font-family: 'Great Vibes', 'Bickham Script', cursive !important;
+  font-size: 3rem !important;
+  letter-spacing: 2px !important;
+  font-weight: 400 !important;
+}
+
+/* لضمان تطبيقه على العناوين الرئيسية في الهيرو سيكشن */
+.hero-header .hero-text h1,
+.hero-header .hero-text h2 {
+  font-family: 'Great Vibes', cursive !important;
+  font-size: 4rem !important;
+}
+
+/* لعناوين الخدمات (مثل "Our Services") */
+h2.font-playfair-display {
+  font-size: 2.8rem !important;
+}

@@ -61,7 +61,7 @@
                 @csrf
                 <button type="submit" class="btn btn-success w-100">
                     <i class="fas fa-coins me-2"></i> 
-                    Use {{ $service->coin_cost }} Coins & Pay {{ max(0, $service->price - $service->coin_cost) }} JOD
+                    Use {{ $service->coin_cost }} Coins & Pay {{max(0, $service->price - ($service->price * $service->discount / 100)) }} JOD
                 </button>
             </form>
         @else

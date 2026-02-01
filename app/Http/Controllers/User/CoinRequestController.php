@@ -12,7 +12,7 @@ use App\Notifications\CoinRequestedNotification;
 
 class CoinRequestController extends Controller
 {
-    // زر "Use Coins & Pay 45 JOD"
+   
     public function redeemCoins(Request $request, Service $service)
     {
         $user = Auth::user();

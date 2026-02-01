@@ -11,6 +11,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/your-kit-id.css">
 
     <!-- Custom Salone Theme CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -21,6 +22,7 @@
     <link rel="stylesheet" href="{{ asset('lib/animate/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('lib/waypoints/animate.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Optional if used -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">

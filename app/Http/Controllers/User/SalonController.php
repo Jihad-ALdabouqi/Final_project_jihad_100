@@ -13,7 +13,7 @@ class SalonController extends Controller
         $query->where('is_active', true);
     }])->findOrFail($id);
 
-    // جلب العروض المرتبطة بالصالون (إذا أردت عرضها في الصفحة)
+   
     $offers = \App\Models\Offer::where('salon_id', $salon->id)->where('is_active', true)->get();
 
     return view('user.pages.salon-show', compact('salon', 'offers'));
